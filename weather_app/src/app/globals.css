@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+
+* {
+  font-family: 'Barriecito', cursive !important;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  background: url('/assets/FreeVector-Rain-Background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.weather {
+  /* font-family: 'Barriecito', cursive;s */
+  font-size: 50px;
+  background: linear-gradient(to bottom, #f2f2f3, #e7de32);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.todayWeather {
+  font-family: 'Barriecito', cursive;
+  background: linear-gradient(to left, #f2f2f3, #5fd43b);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+
+.weekly {
+  font-family: 'Barriecito', cursive;
+  background: linear-gradient(to left, #f3f3f3, #3951dd, #f3f3f3, #88c035c1);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.week-item:hover {
+
+  border: 3cm solid color-mix(in srgb-linear, blue 60%, white 40%);
+
+}
+
+@media screen and (max-width:767px) {
+  body {
+    padding: 10px;
+    min-width: 100%;
+    min-height: 100% !important;
+    background: url('/assets/FreeVector-Rain-Background.jpg');
+    background-repeat: repeat-y;
+    background-size: auto;
+
+  }
+}
